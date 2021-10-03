@@ -1,0 +1,72 @@
+[
+    {
+        "name": "President Biden",
+        "moment": "Sun Oct 03 19:00:00",
+        "text": "A historic tax cut for the middle class. \nLower everyday costs for hardworking Americans.\nAn economy that gives eve\u2026 https://t.co/cqIagpbwS3",
+        "sentiment.score": 0.30000001192092896,
+        "sentiment.magnitude": 1.0
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sun Oct 03 16:47:10",
+        "text": "Those at the top have been getting a free ride at the expense of the middle class for far too long. With my Build B\u2026 https://t.co/NlpOlxtTyO",
+        "sentiment.score": -0.30000001192092896,
+        "sentiment.magnitude": 0.800000011920929
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sun Oct 03 14:34:31",
+        "text": "I stopped by the congressional baseball game this week to see some friends. They don\u2019t let former Senators play \u2013 b\u2026 https://t.co/qqIZYXLQ6z",
+        "sentiment.score": -0.30000001192092896,
+        "sentiment.magnitude": 0.699999988079071
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sun Oct 03 00:50:03",
+        "text": "Today, we mark another grim and heartbreaking milestone in this pandemic: over 700,000 Americans lost. As we acknow\u2026 https://t.co/dDmeIYUAXe",
+        "sentiment.score": -0.10000000149011612,
+        "sentiment.magnitude": 1.2000000476837158
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sat Oct 02 22:10:25",
+        "text": "I\u2019ve been working around the clock to pass my Build Back Better Agenda and the Bipartisan Infrastructure Deal. It\u2019s\u2026 https://t.co/8URnhkWZnP",
+        "sentiment.score": 0.10000000149011612,
+        "sentiment.magnitude": 0.20000000298023224
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sat Oct 02 17:47:29",
+        "text": "During National Domestic Violence Awareness and Prevention Month, we come together to reaffirm our commitment to en\u2026 https://t.co/UQWK2QGdFG",
+        "sentiment.score": 0.4000000059604645,
+        "sentiment.magnitude": 0.4000000059604645
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sat Oct 02 14:34:30",
+        "text": "My Build Back Better Agenda and the Bipartisan Infrastructure Deal will spur economic growth \u2013 creating and support\u2026 https://t.co/W4rEaY93nw",
+        "sentiment.score": 0.6000000238418579,
+        "sentiment.magnitude": 1.2000000476837158
+    },
+    {
+        "name": "President Biden",
+        "moment": "Sat Oct 02 01:45:05",
+        "text": "My Build Back Better Agenda and Bipartisan Infrastructure Deal are going to make a huge difference for the American\u2026 https://t.co/zyDY0H8WRQ",
+        "sentiment.score": 0.6000000238418579,
+        "sentiment.magnitude": 0.6000000238418579
+    },
+    {
+        "name": "President Biden",
+        "moment": "Fri Oct 01 23:40:49",
+        "text": "This week, I\u2019ve been working closely with leaders in Congress to pass my Build Back Better Agenda and Bipartisan In\u2026 https://t.co/gjukDhMCEV",
+        "sentiment.score": 0.30000001192092896,
+        "sentiment.magnitude": 0.30000001192092896
+    },
+    {
+        "name": "President Biden",
+        "moment": "Fri Oct 01 22:32:39",
+        "text": "We are going to deliver for the American people. https://t.co/w5lBtYCUoq",
+        "sentiment.score": 0.20000000298023224,
+        "sentiment.magnitude": 0.5
+    }
+]
