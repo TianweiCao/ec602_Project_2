@@ -1,6 +1,8 @@
 # ec602_Project_2
+# Phase1 - Twitter API
+Phase1's readme is in the file 'project2-phase1-readme.docx'.  
 # Phase2 - Google NLP
-In this task, I use Google NLP API to score the sentiment of the tweets I searched with tweepy in phase 1.  
+In phase2, I use Google Cloud Language API to score the sentiment of the tweets I searched with tweepy in phase 1.  
 ## Setting up authentication
 To begin with, you need to login in Google Cloud Platform, and create a project: https://cloud.google.com/natural-language  
   
@@ -12,7 +14,7 @@ In the Cloud Console, click the email address for the service account that you c
   
 Provide authentication credentials to your application code by setting the environment variable GOOGLE_APPLICATION_CREDENTIALS. This variable only applies to your current shell session, so if you open a new session, set the variable again.
 ```
-export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
+$env:GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH""
 ```
 Replace KEY_PATH with the path of the JSON file that contains your service account key.  
 ## GoogleAPI.py
@@ -25,14 +27,14 @@ Then run the analysis program with:
 ```
 py GoogleNLP.py
 ```
-A json file output(taylor.py) will be automatically generated to show each tweets' sentiment score and magnitude in the format below:
+A json file output(biden.py) will be automatically generated to show each tweets' sentiment score and magnitude in the format below:
 ``` json
 {
-    "name": "Taylor Swift",
-    "moment": "Fri Sep 17 13:18:53",
-    "text": "Hi! Saw you guys got Wildest Dreams trending on tiktok, thought you should have my version \ud83d\ude18\ud83d\ude18\ud83d\ude18\ud83d\ude18\u2026 https://t.co/LtkfAItbUp",
-    "sentiment.score": 0.5,
-    "sentiment.magnitude": 1.5
+    "name": "President Biden",
+    "moment": "Sun Oct 03 19:00:00",
+    "text": "A historic tax cut for the middle class. \nLower everyday costs for hardworking Americans.\nAn economy that gives eve\u2026 https://t.co/cqIagpbwS3",
+    "sentiment.score": 0.30000001192092896,
+    "sentiment.magnitude": 1.0
 }
 ```
   
