@@ -4,7 +4,7 @@ Phase1's readme is in the file 'project2-phase1-readme.docx'.
 # Phase2 - Google NLP
 In phase2, I use Google Cloud Language API to score the sentiment of the tweets I searched with tweepy in phase 1.  
 ## Requirements
-To begin with, you need to login in Google Cloud Platform, and create a project: https://cloud.google.com/natural-language  
+Firstly, you need to login in Google Cloud Platform, and create a project: https://cloud.google.com/natural-language  
   
 Next, create a service account key for the project with the following steps:  
 In the Cloud Console, click the email address for the service account that you created.  
@@ -12,7 +12,8 @@ In the Cloud Console, click the email address for the service account that you c
 2.Click Add key, then click Create new key.  
 3.Click Create. A JSON key file is downloaded to your computer.  
   
-Provide authentication credentials to your application code by setting the environment variable GOOGLE_APPLICATION_CREDENTIALS. This variable only applies to your current shell session, so if you open a new session, set the variable again.
+Provide authentication credentials to your application code by setting the environment variable GOOGLE_APPLICATION_CREDENTIALS. This variable only applies to your current shell session, so if you open a new session, set the variable again.  
+For windows:  
 ```
 $env:GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH""
 ```
