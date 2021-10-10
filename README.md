@@ -38,4 +38,6 @@ A json file output(biden.py) will be automatically generated to show each tweets
     "sentiment.magnitude": 1.0
 }
 ```
-  
+# Phase3 - the sentiment website application
+In this part, I make use of flask package as well as pandas and blueprint to build my nlp function into a website(though not uploaded through aws).
+Since there are numbers of images in this step, please go to phase3-readme.word for more details. Thank you!
