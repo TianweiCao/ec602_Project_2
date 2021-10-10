@@ -4,7 +4,7 @@ import tweepy
 import Keys  # .py file that store all necessary keys
 import json  # To write file as json format
 
-# I use Google NLP to score the sentiment of Taylor Swift
+# I use Google NLP to score the sentiment of a user
 def Google_senti(file_name):
     client = language_v1.LanguageServiceClient()
     output = []
@@ -39,7 +39,7 @@ def Authorization_Setup():
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api #generate the api
 
-# Write tweets information to file as json format.!!!
+# Write tweets information to file as json format.
 def Write_tweets_to_File(Input_list, target_filename):
     data = []
     filename = "%s.json" % target_filename
@@ -49,15 +49,28 @@ def Write_tweets_to_File(Input_list, target_filename):
     json.dump(data, Tweets_text, indent=4)
     Tweets_text.close
 
-# get several numbers of tweets from a certain user, use api.user_timeline() from tweepy!
+# In this phase I make use of tweepy in phase one.
+# I first fetch tweets using tweepy, store them in a json file, 
+# then I use google nlp to get sentiment of each tweet.
+# Where user_timeline() allows me to get certain numbers of tweet from a user.
+# the screen_name is the regist id of the user.
 def Get_User_Timeline(api, ID, Count_Number):
-    user_tweets_list = api.user_timeline(id=ID, count=Count_Number)#id is user name
+    user_tweets_list = api.user_timeline(screen_name=ID, count=Count_Number)#id is user name
     # store result into a jason file
     #print (user_tweets_list)
     Write_tweets_to_File(user_tweets_list, 'user_tweets')
     return user_tweets_list
-
+def get_timeline(id,count):
+    API = Authorization_Setup()
+    return Get_User_Timeline(API,id,count)
+# This function allow me to get the tweets I have post.
+def GET_My_Home_tweets(api):
+    My_Home_tweets = api.home_timeline()
+    # store result in a jason file called 'my_tweets'
+    Write_tweets_to_File(My_Home_tweets, 'my_tweets')
+    return My_Home_tweets
 if __name__ == "__main__":
     API = Authorization_Setup()
-    User_Tweets = Get_User_Timeline(API,'@POTUS',10)
+    User_Tweets = Get_User_Timeline(API,'taylorswift13',10)
+    #User_Tweets =GET_My_Home_tweets(API)
     output = Google_senti('user_tweets.json')
