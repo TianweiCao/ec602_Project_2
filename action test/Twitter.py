@@ -1,9 +1,9 @@
 import tweepy
-import Keys  # .py file that store all necessary keys
+#import Keys  # .py file that store all necessary keys
 import json  # To write file as json format
 import os
 import sys
-'''
+
 access_token = os.getenv('ACCESS_TOKEN')
 access_token_secret = os.getenv('ACCESS_TOKEN_SECRET')
 consumer_key = os.getenv('CONSUMER_KEY')
@@ -22,7 +22,7 @@ def Authorization_Setup():
     auth.set_access_token(Keys.access_token, Keys.access_token_secret) #pass access_token and access_token_secret
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api #generate the api
-
+'''
 # Print out tweets' text.!!!
 def Display_tweets(Input_list):
     tweet_text_list = []
